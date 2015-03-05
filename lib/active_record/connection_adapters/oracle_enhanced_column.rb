@@ -1,7 +1,7 @@
 module ActiveRecord
   module ConnectionAdapters #:nodoc:
     class OracleEnhancedColumn < Column
-      TRUE_VALUES = [true, 1, '1', 't', 'T', 'y', 'Y' 'true', 'TRUE', 'on', 'ON'].to_set
+      TRUE_VALUES = [true, 1, '1', 't', 'T', 'y', 'Y', 'true', 'TRUE', 'on', 'ON'].to_set
       FALSE_VALUES = [false, 0, '0', 'f', 'F', 'n', 'N', 'false', 'FALSE', 'off', 'OFF'].to_set
 
       attr_reader :table_name, :forced_column_type, :nchar, :virtual_column_data_default, :returning_id #:nodoc:
